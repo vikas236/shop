@@ -1,0 +1,107 @@
+.home {
+  width: 100vw;
+  min-height: 750px;
+  max-height: fit-content;
+  background: #eff5ee;
+  padding: 30px 50px;
+}
+
+/* intro banner */
+
+.home .banner {
+  width: 100%;
+  height: 525px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.home .banner .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.home .banner .image {
+  width: fit-content;
+  height: 100%;
+  position: inherit;
+  z-index: 1;
+  padding: 0 100px;
+}
+
+.home .banner .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.home .banner h1 {
+  width: 65%;
+  font-size: 74px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px;
+}
+
+.home .banner .paint {
+  width: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.home .banner .mail {
+  width: fit-content;
+  position: relative;
+  margin-top: 25px;
+}
+
+.home .banner .mail input {
+  width: 300px;
+  padding: 15px 45px;
+  padding-right: 110px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 23px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.home .banner .mail input:placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.home .banner .mail i {
+  height: 100%;
+  position: absolute;
+  left: 22px;
+  top: 18px;
+  color: #1ab272;
+  font-size: 14px;
+}
+
+.home .banner .mail button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 80%;
+  padding: 0;
+  border-radius: 23px;
+  background: #1ab272;
+  color: white;
+  font-weight: 700;
+  padding: 0 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home .banner .mail button:hover {
+  background: white;
+  color: #1ab272;
+}
