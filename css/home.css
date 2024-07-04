@@ -713,10 +713,20 @@
   .products_list span.category {
     margin-top: 10px;
   }
+
+  .delivery_banner img {
+    width: 100%;
+    bottom: -30px;
+  }
 }
 
 @media screen and (max-width: 456px) {
   .home {
     padding: 20px 15px;
+  }
+
+  .delivery_banner img {
+    width: 100%;
+    bottom: -20px;
   }
 }
