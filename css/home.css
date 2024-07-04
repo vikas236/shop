@@ -1,9 +1,9 @@
 .home {
   width: 100vw;
-  min-height: 1250px;
-  max-height: fit-content;
+  height: fit-content;
   background: #eff5ee;
   padding: 30px 50px;
+  overflow: hidden;
 }
 
 /* intro banner */
@@ -140,8 +140,8 @@
 }
 
 .featured .category_names img {
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   outline: none;
   background: #c7a47a;
   border: 1px solid #c7a47a;
@@ -474,4 +474,249 @@
 
 .delivery_banner img {
   height: 600px;
+  position: relative;
+  bottom: 65px;
+}
+
+@media screen and (max-width: 1600px) {
+  .home .banner h1 {
+    font-size: 54px;
+  }
+
+  .featured {
+    overflow: hidden;
+  }
+
+  .products_list .list {
+    flex-wrap: wrap;
+  }
+
+  .products_list .list > div {
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .products_list i.fa-arrow-left,
+  .products_list i.fa-arrow-right {
+    opacity: 1;
+  }
+
+  .chars {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: safe;
+  }
+
+  .chars .char {
+    width: fit-content;
+  }
+
+  .delivery_banner .content {
+    overflow: hidden;
+  }
+
+  .delivery_banner h1 {
+    font-size: 44px;
+  }
+
+  .delivery_banner .content img {
+    width: 75%;
+  }
+
+  .delivery_banner > img {
+    height: 110%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .home {
+    padding: 30px 35px;
+  }
+
+  .home .banner {
+    padding: 0 50px;
+  }
+
+  .home .banner .image {
+    padding: 0;
+    padding-right: 75px;
+  }
+
+  .home .banner h1 {
+    width: 100%;
+  }
+
+  .home .delivery_banner .content {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home .banner h1 {
+    font-size: 44px;
+  }
+
+  .home .banner {
+    height: 400px;
+  }
+
+  .home .banner .image {
+    padding-right: 25px;
+  }
+
+  .featured h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .featured .category_names {
+    gap: 35px;
+  }
+
+  .featured .category_names > div {
+    width: 75px;
+    height: 75px;
+    position: relative;
+  }
+
+  .featured .category_names span {
+    width: 100px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -15px;
+    text-align: center;
+  }
+
+  .products_list .list > div {
+    width: 33.33333333%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 450px;
+  }
+
+  .products_list span.category {
+    margin-top: 50px;
+  }
+
+  .offers {
+    flex-wrap: wrap;
+  }
+
+  .offers .offer {
+    height: 350px;
+  }
+
+  .delivery_banner {
+    padding: 0 50px;
+  }
+
+  .delivery_banner .content {
+    padding: 0;
+  }
+
+  .delivery_banner h1 {
+    font-size: 44px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .home {
+    padding: 30px 25px;
+  }
+
+  .home .banner {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 40px;
+    align-items: start;
+  }
+
+  .home .banner .content img {
+    width: 50%;
+  }
+
+  .home .banner h1 {
+    font-size: 32px;
+  }
+
+  .offers .offer {
+    height: 250px;
+  }
+
+  .delivery_banner {
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 0;
+    height: fit-content;
+  }
+
+  .delivery_banner .content {
+    height: fit-content;
+    overflow: visible;
+  }
+
+  .delivery_banner > img {
+    object-fit: contain;
+    height: fit-content;
+    width: 65%;
+    bottom: -35px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .home .banner {
+    padding: 35px 25px;
+  }
+
+  .home .banner .content img {
+    top: 0;
+  }
+
+  .home h1 {
+    font-size: 32px;
+  }
+
+  .home .featured {
+    width: 100%;
+    position: relative;
+  }
+
+  .featured h1 {
+    margin-bottom: 100px;
+  }
+
+  .home .featured .category_names {
+    position: absolute;
+    left: 50px;
+    top: 105px;
+  }
+
+  .products_list {
+    height: fit-content;
+  }
+
+  .products_list h1 {
+    font-size: 20px;
+  }
+
+  .products_list h1:nth-child(3),
+  .products_list h1:nth-child(4) {
+    display: none;
+  }
+
+  .products_list .list > div {
+    height: 400px;
+    width: 50%;
+  }
+
+  .products_list span.category {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .home {
+    padding: 20px 15px;
+  }
 }
